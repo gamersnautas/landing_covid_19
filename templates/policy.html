@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+
+<section id="policy">
+    <div class="bg-policy">
+        <div class="dark-overlay">
+            {% include '$navbar.html' %}
+            <div class="container h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="container">
+                        <div class="info-tests text-center text-white">
+                            <h2>Política de Privacidad</h2>
+                            <div class="footer-bg d-flex justify-content-between align-items-center">
+                                <div class="left" style="{% if request.path == '/policy/' %}padding-left: 0;{% endif %}">
+                                    <a href="{% url 'index' %}">Home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="privacy-policy">
+    <div class="container">
+        <p>Esta Política de privacidad rige la forma en que el sitio web de www.pruebasmasvida.com. recopila, utiliza, mantiene y divulga información recopilada de los usuarios (cada uno, un “Usuario”) del sitio web (“Sitio”). Esta política de privacidad se aplica al Sitio y a todos los productos y servicios ofrecidos por REPRESENTACIONES C. S. SAS</p>
+        <h4 class="text-center">Información de identificación personal</h4>
+        <p>Podemos recopilar información de identificación personal de los Usuarios de varias maneras en relación con actividades, servicios, características o recursos que ponemos a disposición en nuestro Sitio. Los usuarios pueden visitar nuestro Sitio de forma anónima. Recopilaremos información de identificación personal de los Usuarios solo si voluntariamente nos envían dicha información. Los usuarios siempre pueden negarse a proporcionar información de identificación personal, excepto que puede evitar que participen en ciertas actividades relacionadas con el Sitio.</p>
+        <h4 class="text-center">Información de identificación no personal</h4>
+        <p>Podemos recopilar información de identificación no personal sobre los Usuarios cuando interactúan con nuestro Sitio. La información de identificación no personal puede incluir el nombre del navegador, el tipo de computadora y la información técnica sobre los medios de conexión de los Usuarios a nuestro Sitio, como el sistema operativo y los proveedores de servicios de Internet utilizados y otra información similar.</p>
+        <h4>Cookies del navegador web</h4>
+        <p>Nuestro sitio puede usar “cookies” para mejorar la experiencia del usuario. El navegador web del usuario coloca cookies en su disco duro con fines de mantenimiento de registros y, a veces, para rastrear información sobre ellos. El usuario puede elegir configurar su navegador web para rechazar las cookies, o para alertarlo cuando se envían cookies. Si lo hacen, tenga en cuenta que algunas partes del Sitio pueden no funcionar correctamente.</p>
+        <h4 class="text-center">¿Cómo protegemos su información?</h4>
+        <p>Adoptamos prácticas adecuadas de recopilación, almacenamiento y procesamiento de datos y medidas de seguridad para proteger contra el acceso no autorizado, la alteración, la divulgación o la destrucción de su información personal, nombre de usuario, contraseña, información de transacciones y datos almacenados en nuestro Sitio.</p>
+        <h4 class="text-center">Compartir su información personal</h4>
+        <p>No vendemos, intercambiamos ni alquilamos información de identificación personal de los Usuarios a terceros. Podemos compartir información demográfica agregada genérica no vinculada a ninguna información de identificación personal con respecto a visitantes y usuarios con nuestros socios comerciales, afiliados de confianza y anunciantes para los fines descritos anteriormente.</p>
+        <h4 class="text-center">Cambios a esta política de privacidad</h4>
+        <p><strong>REPRESENTACIONES C. S. SAS.</strong> tiene la discreción de actualizar esta política de privacidad en cualquier momento. Cuando lo hagamos, revisaremos la fecha actualizada al final de esta página. Alentamos a los usuarios a consultar con frecuencia esta página para ver si hay cambios y mantenerse informados sobre cómo estamos ayudando a proteger la información personal que recopilamos. Usted reconoce y acepta que es su responsabilidad revisar esta política de privacidad periódicamente y estar al tanto de las modificaciones.</p>
+        <h4 class="text-center">Su aceptación de estos términos.</h4>
+        <p>Al usar este Sitio, usted expresa su aceptación de esta política. Si no está de acuerdo con esta política, no utilice nuestro sitio. Su uso continuado del Sitio luego de la publicación de cambios a esta política se considerará su aceptación de dichos cambios.</p>
+    </div>
+</section>
+
+{% endblock content %}

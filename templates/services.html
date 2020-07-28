@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+
+    <section id="services">
+        <div class="bg-services">
+            <div class="dark-overlay">
+                {% include '$navbar.html' %}
+                <div class="container h-100">
+                    <div class="row justify-content-center align-items-center h-100">
+                        <div class="container">
+                            <div class="info-tests text-center text-white">
+                                <h2>NUESTROS PRODUCTOS Y SERVICIOS</h2>
+                                <div class="footer-bg d-flex justify-content-between align-items-center">
+                                    <div class="left" style="{% if request.path == '/services/' %}padding-left: 0;{% endif %}">
+                                        <a href="{% url 'index' %}">Home</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="profiling">
+        <div class="container">
+            <h2 class="text-center mb-4">PERFILAMIENTO DEL RIESGO INDIVIDUAL PARA LOS MIEMBROS DE LA ORGANIZACIÓN</h2>
+            <p>Ocurrencia potencial de COVID-19, que puede afectar a los miembros de la organización, a partir de la ponderación de factores que por presencia O ausencia están relacionados con la enfermedad, o puede ser la causa de su aparición en determinadas personas en un lugar específico y en un tiempo dado. Estos esquemas consideran entre otros aspectos: las características de los individuos y/o grupos de personas, los tipos de negocios, las dinámicas propias de la actividad y las posibilidades de contagio por movilidad, interacción e integrantes del círculo social, entre otros. Desarrollo fundamental que le sirve a la organización para la aplicación futura de pruebas y la elaboración de protocolos pertinentes, como ejemplos de sus potenciales usos.</p>
+            <p>NOTA: Los valores dependen de los objetivos de la organización.</p>
+        </div>
+    </div>
+
+    <div class="design text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">DISEÑO DE ESQUEMAS ESTADISTICOS APROPIADOS PARA LA VIGILANCIA EPIDIOMOLOGICA EN ORGANIZACIONES</h2>
+            <p>Incluyen los ajustes según el tipo de prueba a aplicar (molecular o serológica), dependiendo del objetivo epidemiológico propuesto. Permiten el uso adecuado de las pruebas para labores de tamizaje, muestreo o declaración de operaciones o áreas con menos riesgo, optimizando el uso de los recursos financieros y logísticos escasos.</p>
+            <p>NOTA: Los valores dependen de los objetivos de la organización.</p>
+        </div>
+    </div>
+
+    <div class="epidemiologic">
+        <div class="container">
+            <h2 class="text-center mb-4">DISEÑO DE MODELOS EPIDIOMOLOGICOS AJUSTADOS Y ANALISIS DE RESULTADOS QUE SOPORTEN EL PROCESO DE TOMA DE DECISIONES EN ORGANIZACIONES</h2>
+            <p>Considera el efecto diferencial de diversas medidas de intervención no farmacéutica y la actividad propia de la organización. El modelo y su visualización establece entre otros: escenarios y efecto del distanciamiento y aislamiento social de las personas teniendo en cuenta efectos espaciales y temporales, así como el compromiso económico y social relacionado con la aplicación de medidas. Implementan elementos cuantitativos claves para la toma de decisiones, tales como: la identificación de factores de riesgo, el establecimiento de la prevalencia real del virus, la identificación activa de sujetos infectados, el monitoreo continuo de poblaciones y riesgo de contagio, y la vigilancia epidemiológica para grupos focales, entre otras medidas de intervención no farmacéutica.</p>
+            <p>NOTA: Los valores dependen de los objetivos de la organización.</p>
+            <h2 class="text-center mb-4 mt-4">IMPORTANTE</h2>
+            <p>Consideramos que estas acciones pueden ser de utilidad y complementarias frente al COVID-19. La vigilancia epidemiológica cuantitativa soporta la toma de decisiones ya que permite cuantificar el riesgo y la intensidad de la transmisión del virus, lo que evalúa la suficiencia de la organización para encarar el manejo de la pandemia y como respuesta al funcionamiento seguro de las empresas.</p>
+            <h2 class="text-center mb-4 mt-4">ASESORIAS Y MODELO FRANQUICIA LATIN AMERICA</h2>
+            <p>Asesoramos a cualquier persona natural o empresa para montar el servicio de comercialización de pruebas rápidas y test PCR. Compartimos nuestro modelo de Negocio para servicio de Programación de tamizaje para empresas.</p>
+            <h2 class="text-center mb-4 mt-4">PLAN DE COMISIONES</h2>
+            <p>Ofrecemos un plan de comisiones en Colombia por cada cliente referenciado. Comuníquese con nuestra empresa para saber nuestro plan de comisiones</p>
+        </div>
+    </div>
+
+    <div class="important">
+        <div class="container">
+            
+        </div>
+    </div>
+
+{% endblock content %}

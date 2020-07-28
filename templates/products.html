@@ -1,0 +1,146 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+
+<section id="products">
+    <div class="bg-products">
+        <div class="dark-overlay">
+            {% include '$navbar.html' %}
+            <div class="container h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="container">
+                        <div class="info-tests text-center text-white">
+                            <h2>NUESTROS PRODUCTOS Y SERVICIOS</h2>
+                            <div class="footer-bg d-flex justify-content-between align-items-center">
+                                <div class="left">
+                                    <a href="{% url 'index' %}">Home /</a>
+                                </div>
+                                <div class="right">
+                                    <a href="{% url 'services' %}">Página siguiente</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {% comment %} Productos and services description {% endcomment %}
+
+    <div class="products-description">
+        <div class="container h-100">
+            <div class="row justify-content-center-align-items-center h-100">
+                <div class="col-md-4 text-center mb-md-0 mb-5">
+                    <img src="{% static 'img/prueba_logo.png' %}" class="img-fluid col-8" alt="">
+                    <h4>PRUEBA RÁPIDA O SEROLOGICA</h4>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#serologica">Ver más</button>
+                </div>
+                <div class="col-md-4 text-center mb-md-0 mb-5">
+                    <img src="{% static 'img/prueba_logo.png' %}" class="img-fluid col-8" alt="">
+                    <h4>PRUEBA PCR</h4>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pcr">Ver más</button>
+                </div>
+                <div class="col-md-4 text-center mb-md-0 mb-5">
+                    <img src="{% static 'img/prueba_logo.png' %}" class="img-fluid col-8" alt="">
+                    <h4>PROGRAMACION DE TAMISAJE PARA EMPRESAS</h4>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#tamisaje">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="serologica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">PRUEBA RÁPIDA O SEROLOGICA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Pruebas Rápidas o Serológica de origen (Austriaco).</li>
+                    <li>Aprobación de la Unión Europea.</li>
+                    <li>Declaración de conformidad Comunidad Europea.</li>
+                    <li>Validación emitida por la Dirección de Sanidad de la Policía Nacional.</li>
+                    <li>Validación emitida por el Instituto Nacional De Salud. </li>
+                    <li>Test recomendado sin restricción por el Ministerio de Salud de Francia.</li>
+                    <li>Registro Invima.</li>
+                    <li>Test presentación del estuche: Caja x 50 Test.</li>
+                    <li>Lectura en 25 minutos más análisis.</li>
+                    <li>Mejor relación Costo/Calidad del mercado.</li>
+                    <li>Precios Corporativos.</li>
+                </ul>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="pcr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">PRUEBA DE PROTEÍNA C REACTIVA (PCR)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Prueba PCR de origen europeo (Inglaterra).</li>
+                    <li>Aprobación de la FDA de los Estados Unidos.</li>
+                    <li>Aprobación de la Unión Europea.</li>
+                    <li>Avalada por la Organización Mundial de la Salud.</li>
+                    <li>El Kit contiene 96 pruebas.</li>
+                    <li>Presentación liofilizada para su almacenamiento y transporte.</li>
+                    <li>No requiere cadena en Frio para su transporte y almacenamiento.</li>
+                    <li>Toma de la muestra y procesamiento por personal calificado.</li>
+                    <li>Pruebas utilizadas en Estados Unidos, Unión Europea, Reino Unido, México, etc.</li>
+                    <li>Registro INVIMA.</li>
+                    <li>Validado por Universidad Nacional y Agrosavia.</li>
+                    <li>Trabajamos con el Representante exclusivo para Colombia</li>
+                </ul>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="tamisaje" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tamisaje">PRUEBA DE PROTEÍNA C REACTIVA (PCR)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Proceso mediante el cual se utiliza una prueba Rápida o PCR en una empresa para permitir la detección temprana de empleados con posible contagio de COVID-19.
+                <p>Nuestros paquetes 360 para empresas incluyen:</p>
+                <ul>
+                    <li>Toma de muestra por parte de profesionales especializados y autorizados por entidades de Control.</li>
+                    <li>Test rápido o PCR.</li>
+                    <li>Análisis y entrega de resultados.</li>
+                </ul>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+

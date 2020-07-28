@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="home">
+    <div class="bg-home">
+        <div class="bg-overlay">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">MÁS VIDA&#10084</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pruebas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="caption">
+                        <div class="logo">
+                            <img src="{% static 'img/logo2.png' %}" class="img-fluid" alt="">
+                        </div>
+                        <div class="caption-footer text-center">
+                            <a href="https://pruebasmasvida.com/" class="text-white-50">www.pruebasmasvida.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="caption">
+    <div class="bg-caption">
+        <div class="bg-overlay">
+            <div class="container-fluid h-100">
+                <div class="brand-image">
+                    <img src="{% static 'img/logo2.png' %}" class="img-fluid col-md-4 col-6" alt="">
+                </div>
+                <div class="about-us justify-content-center text-center">
+                    <p>Somos una empresa comercializadora especializada en la distribución de Test rápidos y PCR certificados por las entidades gubernamentales en Colombia (INVIMA, INSTITUTO NACIONAL DE SALUD).  Contamos con alianzas con IPS, EPS y laboratorios clínicos aprobados por entidades gubernamentales para el procesamiento y análisis de pruebas totalmente validadas por la Comunidad Económica Europea para Covid 19 Basados en nuestra experiencia realizamos servicios para programar tamizaje en empresas a lo largo de toda Colombia.  Ofrecemos soluciones para empresas de vigilancia epidemiológica y mucho más.</p>
+                </div>
+                <div class="row text-center justify-content-end align-items-center h-100">
+                    <div class="info mt-n5">
+                        <h2>ES MOMENTO DE ACTUAR CON RAPIDEZ Y RESPONSABILIDAD.</h2>
+                        <p class="text-white">UN COMPROMISO DE NUESTRO EQUIPO <strong>MAS VIDA</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="solutions">
+    <div class="bg-solutions">
+        <div class="bg-overlay">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2></h2>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="info-solutions text-center">
+                            <h2>Nuestras Soluciones</h2>
+                            <p>POR QUE SALUD ES VIDA</p>
+                            <ul class="text-left">
+                                <li>Procesos de diagnóstico eficiente usando tecnología de punta en la detección</li>
+                                <li>Kits confiables y respaldados por las autoridades de INVIMA y EL INSTITUTO NACIONAL
+                                    DE SALUD</li>
+                                <li>Toma y procesamiento por profesionales por parte de nuestros aliados</li>
+                                <li>Resultados rápidos</li>
+                                <li>Protocolos estricto durante la toma de la muestra</li>
+                                <li>Toma de muestra in-situ (valor extra) y en los laboratorios de nuestros aliados</li>
+                                <li>Precios corporativos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="type-tests">
+    <div class="bg-tests">
+        <div class="bg-overlay">
+            <div class="container h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-md-2 pt-5 custom-pt align-self-center text-md-left text-center">
+                        <img src="{% static 'img/logo3.png' %}" class="img-fluid col-6 col-md-12" alt="">
+                    </div>
+                    <div class="col-md-10 text-md-left text-center">
+                        <div class="info-tests">
+                            <h1>CONTAMOS CON:</h1>
+                            <h2>Dos tipos de pruebas diagnósticas para detectar <span>COVID-19</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="fast-tests">
+    <div class="bg-fast-tests">
+        <div class="bg-overlay">
+            <div class="container ml-md-5 ml-0">
+                <div class="info-fast-tests text-md-left text-center">
+                    <h2>Pruebas rápidas SARS-CoV-2 GM o Serológica de anticuerpos</h2>
+                    <p>Descripción</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
